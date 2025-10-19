@@ -35,7 +35,7 @@ module "cloudfront-s3-website" {
 | Name                      | Description                                                             |
 |---------------------------|-------------------------------------------------------------------------|
 | **aws_region**            | The AWS region to deploy the website infrastructure                     |
-| **dns_type**              | NEW_ROUTE_53 creates a new hosted zone for a domain registered with Route 53; EXISTING_ROUTE_53 looks up an existing hosted zone associated with your domain; NO_ROUTE_53 omits Route 53 resources. An SSL certificate must be uploaded to ACM regardless of DNS type                                     |
+| **dns_type**              | <ul><li>`NEW_ROUTE_53` creates a new hosted zone for a domain registered with Route 53</li><li>`EXISTING_ROUTE_53` looks up an existing hosted zone associated with your domain</li><li>`NO_ROUTE_53` omits Route 53 resources</li></ul> An SSL certificate must be uploaded to ACM regardless of DNS type |
 | **use_existing_ssl_cert** | Set true to use an existing ACM certificate associated with your domain |
 | **use_access_logging**    | Set true to create an S3 bucket to hold server access logs              |
 | **domain**                | The domain (excluding `http(s)://www.`); example: `google.com`          |
