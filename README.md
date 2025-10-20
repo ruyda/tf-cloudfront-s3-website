@@ -52,8 +52,8 @@ The terraform deployment waits for these steps complete before creating CloudFro
 Use the GitHub Issues feature to report issues and discuss usage of this module.
 
 ### Related projects
-(Coming soon) - API gateway backend for static S3 website
-(Coming soon) - Mnecraft server (1.28) serverless hosting with EC2
+- API gateway backend to pair with this S3 stored front end  [ 🔗 view GitHub](https://github.com/ruyda/tf-serverless-backend)
+- (Coming soon) Mnecraft server (1.28) serverless hosting with EC2
 
 ### License
 GPL2 - keep it open source.
