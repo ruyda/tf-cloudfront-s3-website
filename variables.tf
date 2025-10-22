@@ -26,6 +26,20 @@ variable "domain" {
   description = "the domain (excluding http(s)://www.); example: google.com"
 }
 
+variable "distribution_caching_policy_id" {
+  type        = string
+  nullable    = true
+  default     = "4135ea2d-6df8-44a3-9df3-4b5a84be39ad" // AWS-managed CachingDisabled
+  description = "the ID assigned to the AWS-managed or custom distribution caching policy"
+}
+
+variable "origin_request_policy_id" {
+  type        = string
+  nullable    = true
+  default     = "88a5eaf4-2fd4-4709-b370-b4c650ea3fcf" // AWS-managed CORS-S3Origin
+  description = "the ID assigned to the AWS-managed or custom origin request policy"
+}
+
 variable "website_contents_path" {
   type        = string
   description = "/path/to/website/directory (excluding trailing slash)"

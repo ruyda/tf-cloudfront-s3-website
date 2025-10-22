@@ -16,12 +16,12 @@ variable "domain" {
 
 variable "distribution_caching_policy_id" {
   type        = string
-  default     = "4135ea2d-6df8-44a3-9df3-4b5a84be39ad" // AWS-managed CachingDisabled
+  nullable    = true
   description = "the ID assigned to the AWS-managed or custom distribution caching policy"
 }
 
 variable "origin_request_policy_id" {
   type        = string
-  default     = "88a5eaf4-2fd4-4709-b370-b4c650ea3fcf" // AWS-managed CORS-S3Origin
+  nullable    = true
   description = "the ID assigned to the AWS-managed or custom origin request policy"
 }

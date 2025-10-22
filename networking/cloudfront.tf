@@ -34,8 +34,8 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     min_ttl                  = 0
     default_ttl              = 3600
     max_ttl                  = 86400
-    cache_policy_id          = var.distribution_caching_policy_id
-    origin_request_policy_id = var.origin_request_policy_id
+    cache_policy_id          = var.distribution_caching_policy_id != null ? var.distribution_caching_policy_id : null
+    origin_request_policy_id = var.origin_request_policy_id != null ? var.origin_request_policy_id : null
     viewer_protocol_policy   = "redirect-to-https"
   }
 
