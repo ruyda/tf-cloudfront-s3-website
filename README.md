@@ -43,6 +43,10 @@ module "cloudfront-s3-website" {
 | **distribution_caching_policy_id** | (optional) The AWS or custom cache behavior policy ID assigned to the CloudFront distribution; default is CachingDisabled |
 | **origin_request_policy_id**       | (optional) The AWS or custom origin request policy ID assigned to the CloudFront distribution; default is CORS-S3Origin   |
 
+### Module outputs
+
+TODO
+
 ### Usage notes
 Terraform is aware of file changes in the path given to `website_contents_path`. A change to a file in this directory will trigger Terraform to reupload the file to S3. Unchanged files are not reuploaded.
 
