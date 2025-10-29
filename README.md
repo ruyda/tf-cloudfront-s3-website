@@ -30,7 +30,7 @@ module "cloudfront-s3-website" {
 - Handle Route 53 domains with or without existing hosted zones, as well as domains using other DNS services
 - Cost optimization (reason for not using a long running solution like an EC2 instance)
 
-### Variable inputs
+### Module inputs
 
 | Name                      | Description                                                             |
 |---------------------------|-------------------------------------------------------------------------|
@@ -45,7 +45,9 @@ module "cloudfront-s3-website" {
 
 ### Module outputs
 
-TODO
+| Name                        | Description                                                                                   |
+| **acm_ssl_certificate_arn** | ARN of the existing or newly created SSL certificate                                          |
+| **route_53_hosted_zone_id** | ID of the existing or newly created Route 53 hosted zone; null when `dns_type = "NO_ROUTE53"` |
 
 ### Usage notes
 Terraform is aware of file changes in the path given to `website_contents_path`. A change to a file in this directory will trigger Terraform to reupload the file to S3. Unchanged files are not reuploaded.
