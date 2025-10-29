@@ -46,6 +46,7 @@ module "cloudfront-s3-website" {
 ### Module outputs
 
 | Name                        | Description                                                                                   |
+|-----------------------------|-----------------------------------------------------------------------------------------------|
 | **acm_ssl_certificate_arn** | ARN of the existing or newly created SSL certificate                                          |
 | **route_53_hosted_zone_id** | ID of the existing or newly created Route 53 hosted zone; null when `dns_type = "NO_ROUTE53"` |
 
