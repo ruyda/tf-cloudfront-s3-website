@@ -64,7 +64,7 @@ Use the GitHub Issues feature to report issues and discuss usage of this module.
 
 ### Related projects
 - API gateway back end to pair with this S3 stored front end  [ 🔗 view GitHub](https://github.com/ruyda/tf-serverless-backend)
-- (Coming soon) Mnecraft server (1.28) serverless hosting with EC2
+- Mnecraft server (any version) serverless hosting with EC2 [ 🔗 view GitHub](https://github.com/ruyda/tf-minecraft-server)
 
 ### License
 GPL2 - keep it open source.
